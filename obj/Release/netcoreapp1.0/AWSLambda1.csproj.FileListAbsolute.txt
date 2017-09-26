@@ -1,0 +1,8 @@
+C:\Users\GreaterSum\source\repos\AWSLambda1\AWSLambda1\obj\Release\netcoreapp1.0\AWSLambda1.csproj.CoreCompileInputs.cache
+C:\Users\GreaterSum\source\repos\AWSLambda1\AWSLambda1\obj\Release\netcoreapp1.0\AWSLambda1.AssemblyInfoInputs.cache
+C:\Users\GreaterSum\source\repos\AWSLambda1\AWSLambda1\obj\Release\netcoreapp1.0\AWSLambda1.AssemblyInfo.cs
+C:\Users\GreaterSum\source\repos\AWSLambda1\AWSLambda1\bin\Release\netcoreapp1.0\AWSLambda1.deps.json
+C:\Users\GreaterSum\source\repos\AWSLambda1\AWSLambda1\bin\Release\netcoreapp1.0\AWSLambda1.dll
+C:\Users\GreaterSum\source\repos\AWSLambda1\AWSLambda1\bin\Release\netcoreapp1.0\AWSLambda1.pdb
+C:\Users\GreaterSum\source\repos\AWSLambda1\AWSLambda1\obj\Release\netcoreapp1.0\AWSLambda1.dll
+C:\Users\GreaterSum\source\repos\AWSLambda1\AWSLambda1\obj\Release\netcoreapp1.0\AWSLambda1.pdb
