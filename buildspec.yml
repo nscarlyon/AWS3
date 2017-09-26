@@ -4,5 +4,3 @@ phases:
     commands:
       - dotnet restore
       - dotnet publish AWSLambda1.csproj -c Release -o bin/Release/netcoreapp1.0/publish/AWSLambda1
-      - cd AWSLambda1/AWSLambda1/bin/Release/netcoreapp1.0/publish/AWSLambda1
-      - zip ../../../../../../Artifacts/AWSLambda.zip*
