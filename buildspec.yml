@@ -3,7 +3,7 @@ phases:
   build:
     commands:
       - dotnet restore
-      - dotnet publish AWSLambda1.csproj -c Release -o bin/Release/netcoreapp1.0/publish
-      - cd bin/Release/netcoreapp1.0/publish
-      - Compress-Archive -Path * -DestinationPath test.zip
+      - dotnet publish AWSLambda1.csproj -c Release -o bin/Release/netcoreapp1.0
+      - cd bin/Release/netcoreapp1.0
+      - Compress-Archive -Path publish/* -DestinationPath test.zip -Update
       - aws lambda update-function-code --function-name myBirthYearLambdaFunction --zip-file fileb://test.zip
