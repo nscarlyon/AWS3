@@ -23,7 +23,7 @@ namespace AWSLambda1
         public async Task<Document> FunctionHandler()
         {
             Table myDynamoTable = Table.LoadTable(client, "myDynamoTable");
-            Document myDocument = await myDynamoTable.GetItemAsync(2);
+            Document myDocument = await myDynamoTable.GetItemAsync(1);
             return myDocument;
 
         }
