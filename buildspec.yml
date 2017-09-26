@@ -5,9 +5,6 @@ phases:
       - dotnet restore
       - dotnet publish AWSLambda1.csproj -c Release -o bin/Release/netcoreapp1.0/publish
       - cd bin/Release/netcoreapp1.0/publish
-      - ls
+      - zip ../test.zip *
       - cd ..
-      - zip test.zip publish/*
       - aws lambda update-function-code --function-name myBirthYearLambdaFunction --zip-file fileb://test.zip
-      - cd test.zip
-      - ls
