@@ -1,11 +1,8 @@
-﻿version: 0.1
+﻿version: 0.2 
 phases:
-  install:
+  build:
     commands:
-      - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket mybirthyear 
-                                   --output-template-file NewSamTemplate.yaml
-artifacts:
-  type: zip
-  files:
-    - NewSamTemplate.yaml
+      - dotnet restore
+      - dotnet publish AWSLambda1/AWSLambda1.csproj -c Release -o bin/Release/netcoreapp1.0/publish/AWSLambda1
+      - cd AWSLambda1/AWSLambda1/bin/Release/netcoreapp1.0/publish/AWSLambda1
+      - zip ../../../../../../Artifacts/AWSLambda.zip*
